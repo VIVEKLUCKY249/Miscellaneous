@@ -1,0 +1,23 @@
+{
+    "Pretty Print Scalar PHP": {
+        "prefix": "ecopre",
+        "body": [
+            "echo '<pre>' . $${1:variable} . '</pre>';$0"
+        ],
+        "description": "Print a scalar variable contents in any PHP page"
+    },
+    "Pretty Print Array / Object PHP": {
+        "prefix": "printrpre",
+        "body": [
+            "echo '<pre>';print_r($${1:resource});echo '</pre>';$0"
+        ],
+        "description": "Print an array or object contents in any PHP page"
+    },
+    "Dump Array / Object PHP": {
+        "prefix": "dumppre",
+        "body": [
+            "echo '<pre>';var_dump($${1:resource});echo '</pre>';$0"
+        ],
+        "description": "Dump an array or object contents in any PHP page"
+    }
+}
